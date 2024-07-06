@@ -11,3 +11,11 @@ const personalGreeting = document.querySelector(".personal-greeting");
 
 // Stop the form from submitting when a button is pressed
 form.addEventListener("submit", (e) => e.preventDefault());
+
+// run function when the 'Say hello' button is clicked
+submitBtn.addEventListener("click", () => {
+  // store the entered name in web storage
+  localStorage.setItem("name", nameInput.value);
+  // run nameDisplayCheck() to sort out displaying the personalized greetings and updating the form display
+  nameDisplayCheck();
+});
