@@ -19,3 +19,11 @@ submitBtn.addEventListener("click", () => {
   // run nameDisplayCheck() to sort out displaying the personalized greetings and updating the form display
   nameDisplayCheck();
 });
+
+// run function when the 'Forget' button is clicked
+forgetBtn.addEventListener("click", () => {
+  // Remove the stored name from web storage
+  localStorage.removeItem("name");
+  // run nameDisplayCheck() to sort out displaying the generic greeting again and updating the form display
+  nameDisplayCheck();
+});
