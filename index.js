@@ -49,3 +49,5 @@ function nameDisplayCheck() {
     rememberDiv.style.display = "block";
   }
 }
+
+nameDisplayCheck();
